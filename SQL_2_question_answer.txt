@@ -1,0 +1,6 @@
+SELECT products.name as 'Product Name', categories.name as 'Category Name'
+FROM products
+LEFT OUTER JOIN products_categories
+ON products.idproducts=products_categories.idproducts
+LEFT OUTER JOIN categories
+ON products_categories.idcategories=categories.idcategories;
